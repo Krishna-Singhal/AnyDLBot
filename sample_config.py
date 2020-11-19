@@ -10,13 +10,13 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(str(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = [1158855661]
     # reg: Procedures
-    UTUBE_BOT_USERS = []
-    SUPER_DLBOT_USERS = []
-    SUPER3X_DLBOT_USERS = []
-    SUPER7X_DLBOT_USERS = []
-    BANNED_USERS = []
+    UTUBE_BOT_USERS = AUTH_USERS
+    SUPER_DLBOT_USERS = AUTH_USERS
+    SUPER3X_DLBOT_USERS = AUTH_USERS
+    SUPER7X_DLBOT_USERS = AUTH_USERS
+    BANNED_USERS = # add Spechide id and show your bot to him
     # Wat was I thinking? :\
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
